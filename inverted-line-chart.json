@@ -1,0 +1,24 @@
+{
+  "id": "com.example.invertedlinechart",
+  "name": "Inverted Line Chart",
+  "description": "Gráfico de línea con eje Y invertido usando Plotly",
+  "vendor": "Industrias Venado",
+  "version": "1.0.0",
+  "newInstancePrefix": "InvertedLineChart",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "inverted-line-chart",
+      "url": "https://misitio.com/inverted-line-chart.js",
+      "integrity": "sha384-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "default": "Actual vs Plan (eje invertido)"
+    }
+  },
+  "methods": {},
+  "events": {}
+}
