@@ -8,9 +8,8 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "inverted-line-chart",
-      "url": "https://misitio.com/inverted-line-chart.js",
-      "integrity": "sha384-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "tag": "com-example-invertedlinechart",
+      "url": "https://cdn.jsdelivr.net/gh/jpampuero981-wq/sac-widgets/inverted-line-chart.js"
     }
   ],
   "properties": {
