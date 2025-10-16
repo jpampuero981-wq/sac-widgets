@@ -1,5 +1,5 @@
 (function() {
-    let template = document.createElement("template");
+    const template = document.createElement("template");
     template.innerHTML = `
         <style>
             :host {
@@ -32,18 +32,25 @@
         }
 
         async connectedCallback() {
-            if (!this._plotlyLoaded) {
-                await this.loadPlotly();
-                this._plotlyLoaded = true;
+            try {
+                if (!this._plotlyLoaded) {
+                    await this.loadPlotly();
+                    this._plotlyLoaded = true;
+                }
+                this.renderChart();
+                console.log("InvertedLineChart loaded successfully");
+            } catch (e) {
+                console.error("Error loading InvertedLineChart:", e);
             }
-            this.renderChart();
         }
 
         async loadPlotly() {
-            return new Promise((resolve) => {
+            if (window.Plotly) return;
+            return new Promise((resolve, reject) => {
                 const script = document.createElement("script");
                 script.src = "https://cdn.plot.ly/plotly-latest.min.js";
-                script.onload = resolve;
+                script.onload = () => resolve();
+                script.onerror = () => reject(new Error("Failed to load Plotly"));
                 document.head.appendChild(script);
             });
         }
