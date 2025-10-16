@@ -9,15 +9,10 @@
     {
       "kind": "main",
       "tag": "com-example-invertedlinechart",
-      "url": "https://cdn.jsdelivr.net/gh/jpampuero981-wq/sac-widgets/inverted-line-chart.js"
+      "url": "https://cdn.jsdelivr.net/gh/jpampuero981-wq/sac-widgets/inverted-line-chart-sac.js"
     }
   ],
-  "properties": {
-    "title": {
-      "type": "string",
-      "default": "Actual vs Plan (eje invertido)"
-    }
-  },
+  "properties": {},
   "methods": {},
   "events": {}
 }
